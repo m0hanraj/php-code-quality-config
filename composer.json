@@ -1,6 +1,7 @@
 {
     "name": "m0hanraj/php-code-quality-config",
     "description": "PHP Code Quality Configurations",
+    "type": "composer-plugin",
     "license": "MIT",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
