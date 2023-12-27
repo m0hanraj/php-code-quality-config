@@ -1,7 +1,6 @@
 {
     "name": "m0hanraj/php-code-quality-config",
     "description": "PHP Code Quality Configurations",
-    "type": "metapackage",
     "license": "MIT",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
