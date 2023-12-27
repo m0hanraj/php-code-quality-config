@@ -13,7 +13,15 @@
 		<severity>5</severity>
 	</rule>
 
-	<!-- Temporarily disable some sniffs that conflict with PSR-4. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="newsuk"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Disable some sniffs that conflict with PSR-4. -->
 	<rule ref="WordPress.Files.FileName.InvalidClassFileName">
 		<exclude-pattern>includes/*</exclude-pattern>
 		<exclude-pattern>inc/*</exclude-pattern>
@@ -24,15 +32,14 @@
 		<exclude-pattern>inc/*</exclude-pattern>
 		<exclude-pattern>tests/*</exclude-pattern>
 	</rule>
-	
-	<!-- Don't report the short array issue, as this is fine for VIP env -->
+
 	<rule ref="Universal.Operators.DisallowShortTernary.Found">
-	    <severity>0</severity>
+		<severity>0</severity>
 	</rule>
 
-    <rule ref="Universal.Arrays.DisallowShortArraySyntax.Found">
-        <severity>0</severity>
-    </rule>
+	<rule ref="Universal.Arrays.DisallowShortArraySyntax.Found">
+		<severity>0</severity>
+	</rule>
 
 	<rule ref="WordPress.PHP.YodaConditions.NotYoda">
 		<severity>0</severity>
